@@ -19,3 +19,25 @@ Quant machine learning momentum model developed in python
            
 
 The following Momentum Model capitalizes on the tendency for assets that have exhibited strong performance over a recent period to continue performing well, and vice versa. The Model utilizes the **Relative Strength Index (RSI**), **Z-Score** and **Exponential Moving Average (EMA)** to **quantify the 'momentum' in the specified direction**
+
+
+**Long Position Criteria**
+
+---
+Relative Strength Index (RSI) : RSI <= 45 (OverSold)
+
+Z-Score : 1 < Z-Score < 1.5 (1std deviation from mean)
+
+Exponential Moving Average (EMA) : Current Price > EMA (Recent Bullish Bias)
+
+
+
+
+**Short Position Criteria**
+
+---
+Relative Strength Index (RSI) : RSI >= 65 (OverBought)
+
+Z-Score : -1.5 < Z-Score < -1 (-1std deviation from mean)
+
+Exponential Moving Average (EMA) : Current Price < EMA (Recent Bearish Bias)
